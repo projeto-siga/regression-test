@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 36.534 s <<< FAILURE! - in TestSuite
+pesquisasNaoOk(prodesp.test.pesquisa.PesquisasNaoOkTest)  Time elapsed: 11.379 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[3]/a/text()"}
+  (Session info: chrome=75.0.3770.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D-PROD-BP043912', ip: '10.2.100.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.90, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\156802\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62954}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bfae3ec39752ed63e4c7fc1bcf3afe09
+*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[3]/a/text()}
+	at prodesp.test.pesquisa.PesquisasNaoOkTest.pesquisasNaoOk(PesquisasNaoOkTest.java:37)
+
+abrirHome(prodesp.test.pesquisa.PesquisasOkTest)  Time elapsed: 22.707 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type="submit"]"}
+  (Session info: chrome=75.0.3770.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D-PROD-BP043912', ip: '10.2.100.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.90, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\156802\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62954}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bfae3ec39752ed63e4c7fc1bcf3afe09
+*** Element info: {Using=xpath, value=//button[@type="submit"]}
+

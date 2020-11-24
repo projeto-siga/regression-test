@@ -1,0 +1,770 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>64/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 20 13:53:10 BRST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>4117 seconds (4117605 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='prodesp.test.documentos.TramitarDesfazerTramitacaoTest.CriarAssinarDocumento()'><b>CriarAssinarDocumento</b><br>Test class: prodesp.test.documentos.TramitarDesfazerTramitacaoTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: tramitar (tried for 2 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at prodesp.utils.CustomWebDriverWait.aguardar(CustomWebDriverWait.java:20)
+	at prodesp.utils.Funcionalidades.clicarBotao(Funcionalidades.java:93)
+	at prodesp.pages.documentos.FuncoesDocumentoPage.clicarBotaoTramitar(FuncoesDocumentoPage.java:100)
+	at prodesp.test.documentos.TramitarDesfazerTramitacaoTest.CriarAssinarDocumento(TramitarDesfazerTramitacaoTest.java:40)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: tramitar
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DPSEDEBP161885&apos;, ip: &apos;10.2.112.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 29 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1948778624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1948778624'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: tramitar (tried for 2 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at prodesp.utils.CustomWebDriverWait.aguardar(CustomWebDriverWait.java:20)
+	at prodesp.utils.Funcionalidades.clicarBotao(Funcionalidades.java:93)
+	at prodesp.pages.documentos.FuncoesDocumentoPage.clicarBotaoTramitar(FuncoesDocumentoPage.java:100)
+	at prodesp.test.documentos.TramitarDesfazerTramitacaoTest.CriarAssinarDocumento(TramitarDesfazerTramitacaoTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: tramitar
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DPSEDEBP161885&apos;, ip: &apos;10.2.112.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 29 more
+</pre></div></td>
+<td>33</td>
+<td>prodesp.test.documentos.TramitarDesfazerTramitacaoTest@7188af83</td></tr>
+<tr>
+<td title='prodesp.test.documentos.ApensarDesapensarTest.CriarNovoAssinarApensarDesapensar()'><b>CriarNovoAssinarApensarDesapensar</b><br>Test class: prodesp.test.documentos.ApensarDesapensarTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: desapensar (tried for 2 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at prodesp.utils.CustomWebDriverWait.aguardar(CustomWebDriverWait.java:20)
+	at prodesp.utils.Funcionalidades.clicarBotao(Funcionalidades.java:93)
+	at prodesp.pages.documentos.FuncoesDocumentoPage.clicarBotaoDesapensar(FuncoesDocumentoPage.java:188)
+	at prodesp.test.documentos.ApensarDesapensarTest.CriarNovoAssinarApensarDesapensar(ApensarDesapensarTest.java:47)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: desapensar
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DPSEDEBP161885&apos;, ip: &apos;10.2.112.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 29 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2083485287", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2083485287'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: desapensar (tried for 2 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at prodesp.utils.CustomWebDriverWait.aguardar(CustomWebDriverWait.java:20)
+	at prodesp.utils.Funcionalidades.clicarBotao(Funcionalidades.java:93)
+	at prodesp.pages.documentos.FuncoesDocumentoPage.clicarBotaoDesapensar(FuncoesDocumentoPage.java:188)
+	at prodesp.test.documentos.ApensarDesapensarTest.CriarNovoAssinarApensarDesapensar(ApensarDesapensarTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: desapensar
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DPSEDEBP161885&apos;, ip: &apos;10.2.112.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 29 more
+</pre></div></td>
+<td>38</td>
+<td>prodesp.test.documentos.ApensarDesapensarTest@14028087</td></tr>
+<tr>
+<td title='prodesp.test.documentos.ArquivamentoCorrenteDesarquivamentoCorrenteTest.CriarNovoAssinarArquivamentoCorrenteDesarquivamentoCorrente()'><b>CriarNovoAssinarArquivamentoCorrenteDesarquivamentoCorrente</b><br>Test class: prodesp.test.documentos.ArquivamentoCorrenteDesarquivamentoCorrenteTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: desarquivamento-corrente (tried for 2 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at prodesp.utils.CustomWebDriverWait.aguardar(CustomWebDriverWait.java:20)
+	at prodesp.utils.Funcionalidades.clicarBotao(Funcionalidades.java:93)
+	at prodesp.pages.documentos.FuncoesDocumentoPage.clicarBotaoDesarquivamentoCorrente(FuncoesDocumentoPage.java:130)
+	at prodesp.test.documentos.ArquivamentoCorrenteDesarquivamentoCorrenteTest.CriarNovoAssinarArquivamentoCorrenteDesarquivamentoCorrente(ArquivamentoCorrenteDesarquivamentoCorrenteTest.java:39)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: desarquivamento-corrente
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DPSEDEBP161885&apos;, ip: &apos;10.2.112.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 29 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace622713687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace622713687'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: desarquivamento-corrente (tried for 2 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at prodesp.utils.CustomWebDriverWait.aguardar(CustomWebDriverWait.java:20)
+	at prodesp.utils.Funcionalidades.clicarBotao(Funcionalidades.java:93)
+	at prodesp.pages.documentos.FuncoesDocumentoPage.clicarBotaoDesarquivamentoCorrente(FuncoesDocumentoPage.java:130)
+	at prodesp.test.documentos.ArquivamentoCorrenteDesarquivamentoCorrenteTest.CriarNovoAssinarArquivamentoCorrenteDesarquivamentoCorrente(ArquivamentoCorrenteDesarquivamentoCorrenteTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: desarquivamento-corrente
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DPSEDEBP161885&apos;, ip: &apos;10.2.112.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 29 more
+</pre></div></td>
+<td>35</td>
+<td>prodesp.test.documentos.ArquivamentoCorrenteDesarquivamentoCorrenteTest@7e057f43</td></tr>
+<tr>
+<td title='prodesp.test.documentos.ArquivoCorrenteTest.CriarNovoAssinarArquivoCorrenteTest()'><b>CriarNovoAssinarArquivoCorrenteTest</b><br>Test class: prodesp.test.documentos.ArquivoCorrenteTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: arq-corrente (tried for 2 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at prodesp.utils.CustomWebDriverWait.aguardar(CustomWebDriverWait.java:20)
+	at prodesp.utils.Funcionalidades.clicarBotao(Funcionalidades.java:93)
+	at prodesp.pages.documentos.FuncoesDocumentoPage.clicarBotaoArquivoCorrente(FuncoesDocumentoPage.java:110)
+	at prodesp.test.documentos.ArquivoCorrenteTest.CriarNovoAssinarArquivoCorrenteTest(ArquivoCorrenteTest.java:39)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: arq-corrente
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DPSEDEBP161885&apos;, ip: &apos;10.2.112.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 29 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1681935798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1681935798'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: arq-corrente (tried for 2 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at prodesp.utils.CustomWebDriverWait.aguardar(CustomWebDriverWait.java:20)
+	at prodesp.utils.Funcionalidades.clicarBotao(Funcionalidades.java:93)
+	at prodesp.pages.documentos.FuncoesDocumentoPage.clicarBotaoArquivoCorrente(FuncoesDocumentoPage.java:110)
+	at prodesp.test.documentos.ArquivoCorrenteTest.CriarNovoAssinarArquivoCorrenteTest(ArquivoCorrenteTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: arq-corrente
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DPSEDEBP161885&apos;, ip: &apos;10.2.112.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 29 more
+</pre></div></td>
+<td>36</td>
+<td>prodesp.test.documentos.ArquivoCorrenteTest@413d1baf</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarEmLoteTest.CriarNovoAssinarEmLote()'><b>CriarNovoAssinarEmLote</b><br>Test class: prodesp.test.documentos.AssinarEmLoteTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&quot;checkall&quot;]&quot;}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DPSEDEBP161885&apos;, ip: &apos;10.2.112.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\156802\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53580}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c2a070ef3d2a22527c65bb33ae614cbb
+*** Element info: {Using=xpath, value=//input[@name=&quot;checkall&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at prodesp.utils.Funcionalidades.clicarCheck(Funcionalidades.java:100)
+	at prodesp.pages.documentos.AssinarDocumentosEmLotePage.checkboxAssinaTodos(AssinarDocumentosEmLotePage.java:11)
+	at prodesp.test.documentos.AssinarEmLoteTest.CriarNovoAssinarEmLote(AssinarEmLoteTest.java:42)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace390111306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace390111306'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&quot;checkall&quot;]&quot;}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DPSEDEBP161885&apos;, ip: &apos;10.2.112.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\156802\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53580}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c2a070ef3d2a22527c65bb33ae614cbb
+*** Element info: {Using=xpath, value=//input[@name=&quot;checkall&quot;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at prodesp.utils.Funcionalidades.clicarCheck(Funcionalidades.java:100)
+	at prodesp.pages.documentos.AssinarDocumentosEmLotePage.checkboxAssinaTodos(AssinarDocumentosEmLotePage.java:11)
+	at prodesp.test.documentos.AssinarEmLoteTest.CriarNovoAssinarEmLote(AssinarEmLoteTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>33</td>
+<td>prodesp.test.documentos.AssinarEmLoteTest@7d9d0818</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='prodesp.test.documentos.CriarViaCancelarViaTest.AssinarAdicionarVia()'><b>AssinarAdicionarVia</b><br>Test class: prodesp.test.documentos.CriarViaCancelarViaTest</td>
+<td></td>
+<td>30</td>
+<td>prodesp.test.documentos.CriarViaCancelarViaTest@273444fe</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CriarViaTest.AssinarAdicionarVia()'><b>AssinarAdicionarVia</b><br>Test class: prodesp.test.documentos.CriarViaTest</td>
+<td></td>
+<td>30</td>
+<td>prodesp.test.documentos.CriarViaTest@33bc72d1</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarCancelarTest.AssinarCancelar()'><b>AssinarCancelar</b><br>Test class: prodesp.test.documentos.AssinarCancelarTest</td>
+<td></td>
+<td>31</td>
+<td>prodesp.test.documentos.AssinarCancelarTest@76494737</td></tr>
+<tr>
+<td title='prodesp.test.documentos.DefinirAcompanhamentoTest.CriarAssinarDefinirAcompanhamentoDocumento()'><b>CriarAssinarDefinirAcompanhamentoDocumento</b><br>Test class: prodesp.test.documentos.DefinirAcompanhamentoTest</td>
+<td></td>
+<td>32</td>
+<td>prodesp.test.documentos.DefinirAcompanhamentoTest@5386659f</td></tr>
+<tr>
+<td title='prodesp.test.documentos.VerDocumentoCompletoTest.CriarAssinarDocumento()'><b>CriarAssinarDocumento</b><br>Test class: prodesp.test.documentos.VerDocumentoCompletoTest</td>
+<td></td>
+<td>30</td>
+<td>prodesp.test.documentos.VerDocumentoCompletoTest@5afa3c9</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CancelarDesfazerCancelamentoTest.CriarAssinarDocumento()'><b>CriarAssinarDocumento</b><br>Test class: prodesp.test.documentos.CancelarDesfazerCancelamentoTest</td>
+<td></td>
+<td>32</td>
+<td>prodesp.test.documentos.CancelarDesfazerCancelamentoTest@8458f04</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CancelarTest.CriarAssinarDocumento()'><b>CriarAssinarDocumento</b><br>Test class: prodesp.test.documentos.CancelarTest</td>
+<td></td>
+<td>31</td>
+<td>prodesp.test.documentos.CancelarTest@5524cca1</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CriarNovoHistoricoTest.CriarNovo()'><b>CriarNovo</b><br>Test class: prodesp.test.documentos.CriarNovoHistoricoTest</td>
+<td></td>
+<td>17</td>
+<td>prodesp.test.documentos.CriarNovoHistoricoTest@7c37508a</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CriarNovoTest.CriarNovo()'><b>CriarNovo</b><br>Test class: prodesp.test.documentos.CriarNovoTest</td>
+<td></td>
+<td>16</td>
+<td>prodesp.test.documentos.CriarNovoTest@247310d0</td></tr>
+<tr>
+<td title='prodesp.test.documentos.GerarProtocoloTest.CriarNovoAssinar()'><b>CriarNovoAssinar</b><br>Test class: prodesp.test.documentos.GerarProtocoloTest</td>
+<td></td>
+<td>30</td>
+<td>prodesp.test.documentos.GerarProtocoloTest@16eb3ea3</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarReclassificarTest.CriarNovoAssinar()'><b>CriarNovoAssinar</b><br>Test class: prodesp.test.documentos.AssinarReclassificarTest</td>
+<td></td>
+<td>32</td>
+<td>prodesp.test.documentos.AssinarReclassificarTest@2767e23c</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarTest.CriarNovoAssinar()'><b>CriarNovoAssinar</b><br>Test class: prodesp.test.documentos.AssinarTest</td>
+<td></td>
+<td>28</td>
+<td>prodesp.test.documentos.AssinarTest@710c2b53</td></tr>
+<tr>
+<td title='prodesp.test.documentos.ReclassificarTest.CriarNovoAssinar()'><b>CriarNovoAssinar</b><br>Test class: prodesp.test.documentos.ReclassificarTest</td>
+<td></td>
+<td>32</td>
+<td>prodesp.test.documentos.ReclassificarTest@231f98ef</td></tr>
+<tr>
+<td title='prodesp.test.documentos.ReclassificarDesfazerReclassificacaoTest.CriarNovoAssinar()'><b>CriarNovoAssinar</b><br>Test class: prodesp.test.documentos.ReclassificarDesfazerReclassificacaoTest</td>
+<td></td>
+<td>33</td>
+<td>prodesp.test.documentos.ReclassificarDesfazerReclassificacaoTest@7c137fd5</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CriarNovoAssinarTest.CriarNovoAssinar()'><b>CriarNovoAssinar</b><br>Test class: prodesp.test.documentos.CriarNovoAssinarTest</td>
+<td></td>
+<td>28</td>
+<td>prodesp.test.documentos.CriarNovoAssinarTest@59402b8f</td></tr>
+<tr>
+<td title='prodesp.test.documentos.ApensarTest.CriarNovoAssinarApensar()'><b>CriarNovoAssinarApensar</b><br>Test class: prodesp.test.documentos.ApensarTest</td>
+<td></td>
+<td>31</td>
+<td>prodesp.test.documentos.ApensarTest@909217e</td></tr>
+<tr>
+<td title='prodesp.test.documentos.ArquivamentoCorrenteDesfazerArquivamentoCorrenteTest.CriarNovoAssinarArquivamentoCorrenteDesfazerArquivamentoCorrente()'><b>CriarNovoAssinarArquivamentoCorrenteDesfazerArquivamentoCorrente</b><br>Test class: prodesp.test.documentos.ArquivamentoCorrenteDesfazerArquivamentoCorrenteTest</td>
+<td></td>
+<td>30</td>
+<td>prodesp.test.documentos.ArquivamentoCorrenteDesfazerArquivamentoCorrenteTest@8462f31</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarArquivoCorrenteTest.CriarNovoAssinarArquivoCorrenteTest()'><b>CriarNovoAssinarArquivoCorrenteTest</b><br>Test class: prodesp.test.documentos.AssinarArquivoCorrenteTest</td>
+<td></td>
+<td>32</td>
+<td>prodesp.test.documentos.AssinarArquivoCorrenteTest@4681c175</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarCienciaTest.CriarNovoAssinarCiencia()'><b>CriarNovoAssinarCiencia</b><br>Test class: prodesp.test.documentos.AssinarCienciaTest</td>
+<td></td>
+<td>33</td>
+<td>prodesp.test.documentos.AssinarCienciaTest@645aa696</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CienciaTest.CriarNovoAssinarCiencia()'><b>CriarNovoAssinarCiencia</b><br>Test class: prodesp.test.documentos.CienciaTest</td>
+<td></td>
+<td>31</td>
+<td>prodesp.test.documentos.CienciaTest@303cf2ba</td></tr>
+<tr>
+<td title='prodesp.test.documentos.DefinicaoDeAcompanhamentoDesfazerDefinicaoDeAcompanhamentoTest.CriarNovoAssinarDefinirAcompanhamentoDesfazerDefinicaoAcompanhamento()'><b>CriarNovoAssinarDefinirAcompanhamentoDesfazerDefinicaoAcompanhamento</b><br>Test class: prodesp.test.documentos.DefinicaoDeAcompanhamentoDesfazerDefinicaoDeAcompanhamentoTest</td>
+<td></td>
+<td>34</td>
+<td>prodesp.test.documentos.DefinicaoDeAcompanhamentoDesfazerDefinicaoDeAcompanhamentoTest@7ce026d3</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarDefinirAcompanhamentoTest.CriarNovoAssinarDefinirAcompanhamentoDocumento()'><b>CriarNovoAssinarDefinirAcompanhamentoDocumento</b><br>Test class: prodesp.test.documentos.AssinarDefinirAcompanhamentoTest</td>
+<td></td>
+<td>32</td>
+<td>prodesp.test.documentos.AssinarDefinirAcompanhamentoTest@70ed52de</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarGerarProtocoloTest.CriarNovoAssinarGerarProtocolo()'><b>CriarNovoAssinarGerarProtocolo</b><br>Test class: prodesp.test.documentos.AssinarGerarProtocoloTest</td>
+<td></td>
+<td>29</td>
+<td>prodesp.test.documentos.AssinarGerarProtocoloTest@5890e879</td></tr>
+<tr>
+<td title='prodesp.test.documentos.HistoricoTest.CriarNovoAssinarHistorico()'><b>CriarNovoAssinarHistorico</b><br>Test class: prodesp.test.documentos.HistoricoTest</td>
+<td></td>
+<td>29</td>
+<td>prodesp.test.documentos.HistoricoTest@5032714f</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarHistoricoTest.CriarNovoAssinarHistorico()'><b>CriarNovoAssinarHistorico</b><br>Test class: prodesp.test.documentos.AssinarHistoricoTest</td>
+<td></td>
+<td>29</td>
+<td>prodesp.test.documentos.AssinarHistoricoTest@3e08ff24</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarIncluirDocumentoTest.CriarNovoAssinarIncluirDocumento()'><b>CriarNovoAssinarIncluirDocumento</b><br>Test class: prodesp.test.documentos.AssinarIncluirDocumentoTest</td>
+<td></td>
+<td>34</td>
+<td>prodesp.test.documentos.AssinarIncluirDocumentoTest@1caa0244</td></tr>
+<tr>
+<td title='prodesp.test.documentos.IncluirDocumentoTest.CriarNovoAssinarIncluirDocumento()'><b>CriarNovoAssinarIncluirDocumento</b><br>Test class: prodesp.test.documentos.IncluirDocumentoTest</td>
+<td></td>
+<td>34</td>
+<td>prodesp.test.documentos.IncluirDocumentoTest@6e9a5ed8</td></tr>
+<tr>
+<td title='prodesp.test.documentos.IncluirDocumentoAssinarTest.CriarNovoAssinarIncluirDocumentoAssinar()'><b>CriarNovoAssinarIncluirDocumentoAssinar</b><br>Test class: prodesp.test.documentos.IncluirDocumentoAssinarTest</td>
+<td></td>
+<td>47</td>
+<td>prodesp.test.documentos.IncluirDocumentoAssinarTest@451001e5</td></tr>
+<tr>
+<td title='prodesp.test.documentos.SobrestarTest.CriarNovoAssinarSobrestar()'><b>CriarNovoAssinarSobrestar</b><br>Test class: prodesp.test.documentos.SobrestarTest</td>
+<td></td>
+<td>31</td>
+<td>prodesp.test.documentos.SobrestarTest@1a75e76a</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarSobrestarTest.CriarNovoAssinarSobrestar()'><b>CriarNovoAssinarSobrestar</b><br>Test class: prodesp.test.documentos.AssinarSobrestarTest</td>
+<td></td>
+<td>32</td>
+<td>prodesp.test.documentos.AssinarSobrestarTest@6be968ce</td></tr>
+<tr>
+<td title='prodesp.test.documentos.SobrestarDesfazerSobrestarTest.CriarNovoAssinarSobrestarDesfazerSobrestar()'><b>CriarNovoAssinarSobrestarDesfazerSobrestar</b><br>Test class: prodesp.test.documentos.SobrestarDesfazerSobrestarTest</td>
+<td></td>
+<td>33</td>
+<td>prodesp.test.documentos.SobrestarDesfazerSobrestarTest@7a35b0f5</td></tr>
+<tr>
+<td title='prodesp.test.documentos.DesobrestarDesfazerDesobrestarTest.CriarNovoAssinarSobrestarDesobrestar()'><b>CriarNovoAssinarSobrestarDesobrestar</b><br>Test class: prodesp.test.documentos.DesobrestarDesfazerDesobrestarTest</td>
+<td></td>
+<td>33</td>
+<td>prodesp.test.documentos.DesobrestarDesfazerDesobrestarTest@5e2c3d18</td></tr>
+<tr>
+<td title='prodesp.test.documentos.DesobrestarTest.CriarNovoAssinarSobrestarDesobrestar()'><b>CriarNovoAssinarSobrestarDesobrestar</b><br>Test class: prodesp.test.documentos.DesobrestarTest</td>
+<td></td>
+<td>32</td>
+<td>prodesp.test.documentos.DesobrestarTest@2cb4893b</td></tr>
+<tr>
+<td title='prodesp.test.documentos.SobrestarDesobrestarTest.CriarNovoAssinarSobrestarDesobrestar()'><b>CriarNovoAssinarSobrestarDesobrestar</b><br>Test class: prodesp.test.documentos.SobrestarDesobrestarTest</td>
+<td></td>
+<td>33</td>
+<td>prodesp.test.documentos.SobrestarDesobrestarTest@4a003cbe</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarTramitarTest.CriarNovoAssinarTramitar()'><b>CriarNovoAssinarTramitar</b><br>Test class: prodesp.test.documentos.AssinarTramitarTest</td>
+<td></td>
+<td>33</td>
+<td>prodesp.test.documentos.AssinarTramitarTest@48075da3</td></tr>
+<tr>
+<td title='prodesp.test.documentos.TramitarTest.CriarNovoAssinarTramitar()'><b>CriarNovoAssinarTramitar</b><br>Test class: prodesp.test.documentos.TramitarTest</td>
+<td></td>
+<td>34</td>
+<td>prodesp.test.documentos.TramitarTest@1033576a</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CriarNovoDefinirMarcadorTest.CriarNovoDefinirMarcador()'><b>CriarNovoDefinirMarcador</b><br>Test class: prodesp.test.documentos.CriarNovoDefinirMarcadorTest</td>
+<td></td>
+<td>17</td>
+<td>prodesp.test.documentos.CriarNovoDefinirMarcadorTest@6440112d</td></tr>
+<tr>
+<td title='prodesp.test.documentos.DefinirMarcadorTest.CriarNovoDefinirMarcador()'><b>CriarNovoDefinirMarcador</b><br>Test class: prodesp.test.documentos.DefinirMarcadorTest</td>
+<td></td>
+<td>18</td>
+<td>prodesp.test.documentos.DefinirMarcadorTest@4d1c005e</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CriarNovoDuplicarTest.CriarNovoDuplicar()'><b>CriarNovoDuplicar</b><br>Test class: prodesp.test.documentos.CriarNovoDuplicarTest</td>
+<td></td>
+<td>16</td>
+<td>prodesp.test.documentos.CriarNovoDuplicarTest@6caf0677</td></tr>
+<tr>
+<td title='prodesp.test.documentos.DuplicarTest.CriarNovoDuplicar()'><b>CriarNovoDuplicar</b><br>Test class: prodesp.test.documentos.DuplicarTest</td>
+<td></td>
+<td>16</td>
+<td>prodesp.test.documentos.DuplicarTest@6fa51cd4</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CriarNovoEditarTest.CriarNovoEditar()'><b>CriarNovoEditar</b><br>Test class: prodesp.test.documentos.CriarNovoEditarTest</td>
+<td></td>
+<td>23</td>
+<td>prodesp.test.documentos.CriarNovoEditarTest@68c9133c</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CriarNovoExcluirTest.CriarNovoExcluir()'><b>CriarNovoExcluir</b><br>Test class: prodesp.test.documentos.CriarNovoExcluirTest</td>
+<td></td>
+<td>19</td>
+<td>prodesp.test.documentos.CriarNovoExcluirTest@18271936</td></tr>
+<tr>
+<td title='prodesp.test.documentos.FinalizarEditarTest.CriarNovoFinalizar()'><b>CriarNovoFinalizar</b><br>Test class: prodesp.test.documentos.FinalizarEditarTest</td>
+<td></td>
+<td>27</td>
+<td>prodesp.test.documentos.FinalizarEditarTest@402c4085</td></tr>
+<tr>
+<td title='prodesp.test.documentos.RefazerTest.CriarNovoFinalizar()'><b>CriarNovoFinalizar</b><br>Test class: prodesp.test.documentos.RefazerTest</td>
+<td></td>
+<td>21</td>
+<td>prodesp.test.documentos.RefazerTest@cecf639</td></tr>
+<tr>
+<td title='prodesp.test.documentos.FinalizarTest.CriarNovoFinalizar()'><b>CriarNovoFinalizar</b><br>Test class: prodesp.test.documentos.FinalizarTest</td>
+<td></td>
+<td>20</td>
+<td>prodesp.test.documentos.FinalizarTest@7ce69770</td></tr>
+<tr>
+<td title='prodesp.test.documentos.FinalizarRefazerTest.CriarNovoFinalizar()'><b>CriarNovoFinalizar</b><br>Test class: prodesp.test.documentos.FinalizarRefazerTest</td>
+<td></td>
+<td>21</td>
+<td>prodesp.test.documentos.FinalizarRefazerTest@1750fbeb</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CriarNovoFinalizarTest.CriarNovoFinalizar()'><b>CriarNovoFinalizar</b><br>Test class: prodesp.test.documentos.CriarNovoFinalizarTest</td>
+<td></td>
+<td>20</td>
+<td>prodesp.test.documentos.CriarNovoFinalizarTest@5ddeb7cb</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AnotarTest.CriarNovoFinalizarAnotar()'><b>CriarNovoFinalizarAnotar</b><br>Test class: prodesp.test.documentos.AnotarTest</td>
+<td></td>
+<td>22</td>
+<td>prodesp.test.documentos.AnotarTest@5b247367</td></tr>
+<tr>
+<td title='prodesp.test.documentos.FinalizarAnotarTest.CriarNovoFinalizarAnotar()'><b>CriarNovoFinalizarAnotar</b><br>Test class: prodesp.test.documentos.FinalizarAnotarTest</td>
+<td></td>
+<td>22</td>
+<td>prodesp.test.documentos.FinalizarAnotarTest@24569dba</td></tr>
+<tr>
+<td title='prodesp.test.documentos.FinalizarAssinarTest.CriarNovoFinalizarAssinar()'><b>CriarNovoFinalizarAssinar</b><br>Test class: prodesp.test.documentos.FinalizarAssinarTest</td>
+<td></td>
+<td>32</td>
+<td>prodesp.test.documentos.FinalizarAssinarTest@5b218417</td></tr>
+<tr>
+<td title='prodesp.test.documentos.FinalizarJuntarTest.CriarNovoFinalizarAssinarJuntar()'><b>CriarNovoFinalizarAssinarJuntar</b><br>Test class: prodesp.test.documentos.FinalizarJuntarTest</td>
+<td></td>
+<td>38</td>
+<td>prodesp.test.documentos.FinalizarJuntarTest@72cc7e6f</td></tr>
+<tr>
+<td title='prodesp.test.documentos.JuntarTest.CriarNovoFinalizarAssinarJuntar()'><b>CriarNovoFinalizarAssinarJuntar</b><br>Test class: prodesp.test.documentos.JuntarTest</td>
+<td></td>
+<td>38</td>
+<td>prodesp.test.documentos.JuntarTest@72035809</td></tr>
+<tr>
+<td title='prodesp.test.documentos.JuntarDesentranharTest.CriarNovoFinalizarAssinarJuntarDesentranhar()'><b>CriarNovoFinalizarAssinarJuntarDesentranhar</b><br>Test class: prodesp.test.documentos.JuntarDesentranharTest</td>
+<td></td>
+<td>42</td>
+<td>prodesp.test.documentos.JuntarDesentranharTest@183ec003</td></tr>
+<tr>
+<td title='prodesp.test.documentos.JuntarDesfazerJuntadaTest.CriarNovoFinalizarAssinarJuntarDesfazerJuntada()'><b>CriarNovoFinalizarAssinarJuntarDesfazerJuntada</b><br>Test class: prodesp.test.documentos.JuntarDesfazerJuntadaTest</td>
+<td></td>
+<td>43</td>
+<td>prodesp.test.documentos.JuntarDesfazerJuntadaTest@48bb62</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CriarNovoVisualizarTest.CriarNovoVisualizar()'><b>CriarNovoVisualizar</b><br>Test class: prodesp.test.documentos.CriarNovoVisualizarTest</td>
+<td></td>
+<td>16</td>
+<td>prodesp.test.documentos.CriarNovoVisualizarTest@cc43f62</td></tr>
+<tr>
+<td title='prodesp.test.documentos.VisualizarTest.CriarNovoVisualizar()'><b>CriarNovoVisualizar</b><br>Test class: prodesp.test.documentos.VisualizarTest</td>
+<td></td>
+<td>16</td>
+<td>prodesp.test.documentos.VisualizarTest@31ea9581</td></tr>
+<tr>
+<td title='prodesp.test.documentos.ExcluirCossignatarioTest.assinaExcluiCossignatario()'><b>assinaExcluiCossignatario</b><br>Test class: prodesp.test.documentos.ExcluirCossignatarioTest</td>
+<td></td>
+<td>19</td>
+<td>prodesp.test.documentos.ExcluirCossignatarioTest@353352b6</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarComoSubstitutoFinalizarTest.criarAssinarAssinarComoSubstituto()'><b>criarAssinarAssinarComoSubstituto</b><br>Test class: prodesp.test.documentos.AssinarComoSubstitutoFinalizarTest</td>
+<td></td>
+<td>26</td>
+<td>prodesp.test.documentos.AssinarComoSubstitutoFinalizarTest@221a3fa4</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarComoSubstitutoTest.criarAssinarComoSubstituto()'><b>criarAssinarComoSubstituto</b><br>Test class: prodesp.test.documentos.AssinarComoSubstitutoTest</td>
+<td></td>
+<td>27</td>
+<td>prodesp.test.documentos.AssinarComoSubstitutoTest@6c284af</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarAssinarComoSubstitutoTest.criarAssinarComoSubstituto()'><b>criarAssinarComoSubstituto</b><br>Test class: prodesp.test.documentos.AssinarAssinarComoSubstitutoTest</td>
+<td></td>
+<td>26</td>
+<td>prodesp.test.documentos.AssinarAssinarComoSubstitutoTest@2b40ff9c</td></tr>
+<tr>
+<td title='prodesp.test.documentos.IncluirCossignatarioTest.criarAssinarDocumentoCossignatario()'><b>criarAssinarDocumentoCossignatario</b><br>Test class: prodesp.test.documentos.IncluirCossignatarioTest</td>
+<td></td>
+<td>44</td>
+<td>prodesp.test.documentos.IncluirCossignatarioTest@606e4010</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarDocumentoPorFuncaoTest.criarAssinarDocumentoFuncao()'><b>criarAssinarDocumentoFuncao</b><br>Test class: prodesp.test.documentos.AssinarDocumentoPorFuncaoTest</td>
+<td></td>
+<td>29</td>
+<td>prodesp.test.documentos.AssinarDocumentoPorFuncaoTest@268f106e</td></tr>
+<tr>
+<td title='prodesp.test.documentos.AssinarDocumentoSubstitutoTest.criarAssinarDocumentoOutroUsuario()'><b>criarAssinarDocumentoOutroUsuario</b><br>Test class: prodesp.test.documentos.AssinarDocumentoSubstitutoTest</td>
+<td></td>
+<td>26</td>
+<td>prodesp.test.documentos.AssinarDocumentoSubstitutoTest@496bc455</td></tr>
+<tr>
+<td title='prodesp.test.documentos.CriarNovoOutroUsuarioAssinaTest.criarNovoOutroUsuarioAssina()'><b>criarNovoOutroUsuarioAssina</b><br>Test class: prodesp.test.documentos.CriarNovoOutroUsuarioAssinaTest</td>
+<td></td>
+<td>13</td>
+<td>prodesp.test.documentos.CriarNovoOutroUsuarioAssinaTest@57a78e3</td></tr>
+</table><p>
+</body>
+</html>

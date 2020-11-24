@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="prodesp.test.pesquisa.PesquisasNaoOkTest">
+        <methods>
+          <include name="abrirHome"/>
+          <include name="finalizarTeste"/>
+          <include name="pesquisasNaoOk"/>
+        </methods>
+      </class> <!-- prodesp.test.pesquisa.PesquisasNaoOkTest -->
+      <class name="prodesp.test.acesso.LoginTest">
+        <methods>
+          <include name="abrirHome"/>
+          <include name="finalizarTeste"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- prodesp.test.acesso.LoginTest -->
+      <class name="prodesp.test.pesquisa.PesquisasOkTest">
+        <methods>
+          <include name="abrirHome"/>
+          <include name="finalizarTeste"/>
+          <include name="pesquisasOk"/>
+        </methods>
+      </class> <!-- prodesp.test.pesquisa.PesquisasOkTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

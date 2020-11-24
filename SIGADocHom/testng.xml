@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="prodesp.test.documentos.FinalizarJuntarTest"/>
+      <class name="prodesp.test.documentos.VerDocumentoCompletoTest"/>
+      <class name="prodesp.test.documentos.JuntarTest"/>
+      <class name="prodesp.test.documentos.ApensarTest"/>
+      <class name="prodesp.test.documentos.CriarNovoExcluirTest"/>
+      <class name="prodesp.test.documentos.IncluirCossignatarioTest"/>
+      <class name="prodesp.test.documentos.CancelarDesfazerCancelamentoTest"/>
+      <class name="prodesp.test.documentos.AssinarTramitarTest"/>
+      <class name="prodesp.test.documentos.CriarNovoEditarTest"/>
+      <class name="prodesp.test.documentos.SobrestarDesfazerSobrestarTest"/>
+      <class name="prodesp.test.documentos.DesobrestarDesfazerDesobrestarTest"/>
+      <class name="prodesp.test.documentos.DesobrestarTest"/>
+      <class name="prodesp.test.documentos.CriarNovoVisualizarTest"/>
+      <class name="prodesp.test.documentos.FinalizarAssinarTest"/>
+      <class name="prodesp.test.documentos.AssinarCienciaTest"/>
+      <class name="prodesp.test.documentos.CriarNovoDuplicarTest"/>
+      <class name="prodesp.test.documentos.ArquivoCorrenteTest"/>
+      <class name="prodesp.test.documentos.GerarProtocoloTest"/>
+      <class name="prodesp.test.documentos.CriarViaCancelarViaTest"/>
+      <class name="prodesp.test.documentos.CriarViaTest"/>
+      <class name="prodesp.test.documentos.SobrestarTest"/>
+      <class name="prodesp.test.documentos.CancelarTest"/>
+      <class name="prodesp.test.documentos.HistoricoTest"/>
+      <class name="prodesp.test.documentos.JuntarDesfazerJuntadaTest"/>
+      <class name="prodesp.test.documentos.ExcluirCossignatarioTest"/>
+      <class name="prodesp.test.documentos.AssinarArquivoCorrenteTest"/>
+      <class name="prodesp.test.documentos.CriarNovoOutroUsuarioAssinaTest"/>
+      <class name="prodesp.test.documentos.FinalizarEditarTest"/>
+      <class name="prodesp.test.documentos.DuplicarTest"/>
+      <class name="prodesp.test.documentos.AssinarReclassificarTest"/>
+      <class name="prodesp.test.documentos.AssinarTest"/>
+      <class name="prodesp.test.documentos.DefinirAcompanhamentoTest"/>
+      <class name="prodesp.test.documentos.ApensarDesapensarTest"/>
+      <class name="prodesp.test.documentos.RefazerTest"/>
+      <class name="prodesp.test.documentos.AssinarIncluirDocumentoTest"/>
+      <class name="prodesp.test.documentos.DefinicaoDeAcompanhamentoDesfazerDefinicaoDeAcompanhamentoTest"/>
+      <class name="prodesp.test.documentos.FinalizarTest"/>
+      <class name="prodesp.test.documentos.FinalizarRefazerTest"/>
+      <class name="prodesp.test.documentos.AnotarTest"/>
+      <class name="prodesp.test.documentos.AssinarDocumentoPorFuncaoTest"/>
+      <class name="prodesp.test.documentos.IncluirDocumentoTest"/>
+      <class name="prodesp.test.documentos.ArquivamentoCorrenteDesarquivamentoCorrenteTest"/>
+      <class name="prodesp.test.documentos.AssinarComoSubstitutoTest"/>
+      <class name="prodesp.test.documentos.AssinarGerarProtocoloTest"/>
+      <class name="prodesp.test.documentos.CriarNovoDefinirMarcadorTest"/>
+      <class name="prodesp.test.documentos.VisualizarTest"/>
+      <class name="prodesp.test.documentos.ReclassificarTest"/>
+      <class name="prodesp.test.documentos.ReclassificarDesfazerReclassificacaoTest"/>
+      <class name="prodesp.test.documentos.JuntarDesentranharTest"/>
+      <class name="prodesp.test.documentos.AssinarEmLoteTest"/>
+      <class name="prodesp.test.documentos.AssinarComoSubstitutoFinalizarTest"/>
+      <class name="prodesp.test.documentos.IncluirDocumentoAssinarTest"/>
+      <class name="prodesp.test.documentos.AssinarAssinarComoSubstitutoTest"/>
+      <class name="prodesp.test.documentos.AssinarHistoricoTest"/>
+      <class name="prodesp.test.documentos.DefinirMarcadorTest"/>
+      <class name="prodesp.test.documentos.ArquivamentoCorrenteDesfazerArquivamentoCorrenteTest"/>
+      <class name="prodesp.test.documentos.FinalizarAnotarTest"/>
+      <class name="prodesp.test.documentos.CriarNovoFinalizarTest"/>
+      <class name="prodesp.test.documentos.AssinarDefinirAcompanhamentoTest"/>
+      <class name="prodesp.test.documentos.AssinarDocumentoSubstitutoTest"/>
+      <class name="prodesp.test.documentos.CriarNovoAssinarTest"/>
+      <class name="prodesp.test.documentos.TramitarDesfazerTramitacaoTest"/>
+      <class name="prodesp.test.documentos.AssinarSobrestarTest"/>
+      <class name="prodesp.test.documentos.CriarNovoHistoricoTest"/>
+      <class name="prodesp.test.documentos.CriarNovoTest"/>
+      <class name="prodesp.test.documentos.TramitarTest"/>
+      <class name="prodesp.test.documentos.CienciaTest"/>
+      <class name="prodesp.test.documentos.AssinarCancelarTest"/>
+      <class name="prodesp.test.documentos.SobrestarDesobrestarTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

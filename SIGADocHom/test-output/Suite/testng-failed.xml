@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="prodesp.test.documentos.TramitarDesfazerTramitacaoTest">
+        <methods>
+          <include name="loginSucesso"/>
+          <include name="abrirHome"/>
+          <include name="finalizarTeste"/>
+          <include name="CriarAssinarDocumento"/>
+        </methods>
+      </class> <!-- prodesp.test.documentos.TramitarDesfazerTramitacaoTest -->
+      <class name="prodesp.test.documentos.ArquivoCorrenteTest">
+        <methods>
+          <include name="CriarNovoAssinarArquivoCorrenteTest"/>
+          <include name="abrirHome"/>
+          <include name="finalizarTeste"/>
+          <include name="loginSucesso"/>
+        </methods>
+      </class> <!-- prodesp.test.documentos.ArquivoCorrenteTest -->
+      <class name="prodesp.test.documentos.ArquivamentoCorrenteDesarquivamentoCorrenteTest">
+        <methods>
+          <include name="abrirHome"/>
+          <include name="loginSucesso"/>
+          <include name="finalizarTeste"/>
+          <include name="CriarNovoAssinarArquivamentoCorrenteDesarquivamentoCorrente"/>
+        </methods>
+      </class> <!-- prodesp.test.documentos.ArquivamentoCorrenteDesarquivamentoCorrenteTest -->
+      <class name="prodesp.test.documentos.ApensarDesapensarTest">
+        <methods>
+          <include name="abrirHome"/>
+          <include name="finalizarTeste"/>
+          <include name="CriarNovoAssinarApensarDesapensar"/>
+          <include name="loginSucesso"/>
+        </methods>
+      </class> <!-- prodesp.test.documentos.ApensarDesapensarTest -->
+      <class name="prodesp.test.documentos.AssinarEmLoteTest">
+        <methods>
+          <include name="loginSucesso"/>
+          <include name="abrirHome"/>
+          <include name="CriarNovoAssinarEmLote"/>
+          <include name="finalizarTeste"/>
+        </methods>
+      </class> <!-- prodesp.test.documentos.AssinarEmLoteTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
